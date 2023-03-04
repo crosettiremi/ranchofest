@@ -1,0 +1,162 @@
+body {
+	border: 6px ridge #bbb;
+	/* background-image: url("../images/bghorse.gif"); */
+	background-repeat: repeat;
+	font-family: "times", serif;
+}
+
+p, li {
+	font-size: 1.2rem;
+}
+
+.section {
+	border-bottom: 6px ridge #bbb;
+}
+
+.nav {
+	color: yellow !important;
+	background-color: black;
+	border-bottom: 6px ridge #bbb;
+}
+
+.nav a {
+	color: yellow;
+}
+
+.hero-unit {
+	color: black !important;
+	background-color: yellow;
+	border-bottom: 6px ridge #bbb;
+}
+
+/* Hero */
+.title {
+	font-family: "colt", serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size:6.8vw;
+}
+.tagline {
+	font-family: "filmotype-wand", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2.65vw;
+}
+
+.intro {
+	color: yellow;
+	background-color: black;
+}
+
+.expect {
+	color: black;
+	background-color: yellow;
+}
+
+.directions {
+	color: yellow;
+	background-color: black;
+}
+
+.dont-forget {
+	color: black;
+	background-color: yellow;
+}
+
+.permitted {
+	list-style-type: "\2714";
+}
+
+ul.permitted li::marker {
+  color: chartreuse !important;
+  display: inline-block;
+}
+
+.permitted li {
+	padding-left: 10px;
+}
+
+.prohibited {
+	list-style-type: "\2716";
+}
+
+.prohibited li {
+	padding-left: 10px;
+}
+
+ul.prohibited li::marker {
+  color: red !important;
+  display: inline-block;
+}
+
+.packing-list li {
+	padding-left: 10px;
+}
+
+.this-not-that {
+	background-color: black;
+	color: yellow;
+}
+
+footer {
+	background-color: yellow;
+}
+footer p {
+	color: black !important;
+	font-family: "colt", serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size:2.7vw; 
+}
+
+h2, h3, h4 {
+	font-family: "clarendon-wide-sc", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+h1	{
+
+}
+
+ul {
+	padding-inline-start: 20px;
+}
+
+.btn-primary {
+	border-radius: 0;
+	padding: 1rem 2rem;
+	font-size: 2.5rem;
+	font-family: "filmotype-wand";
+	color: black;
+	background: yellow /* url('../images/rainbow.gif') */ top left;
+	border: 6px outset #bbb;
+	box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+	text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+}
+
+.btn-primary:hover {
+	color: black;
+	background: rgb(255, 255, 0) url('../images/rainbow.gif') top left;
+	border: 6px inset #bbb;
+}
+
+.blink:hover {
+	animation: none;
+	-webkit-animation: none;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+	visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+	visibility: hidden;
+  }
+}
