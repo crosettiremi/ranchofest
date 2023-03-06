@@ -3,6 +3,7 @@ body {
   /* background-image: url("../images/bghorse.gif"); */
   background-repeat: repeat;
   font-family: "times", serif;
+  font-display: swap;
 }
 
 p,

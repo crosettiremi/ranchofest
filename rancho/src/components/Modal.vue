@@ -3,7 +3,7 @@
 		<div v-if="!donationOverride && state" class="min-w-[50px] min-h-[50px] fixed top-1/3 left-1/2 bg-black p-4 flex flex-col" style="transform: translate(-50%, 0); border: 6px ridge #bbb; color: yellow;">
 			<!-- Close Button -->
 			<div class="flex justify-end">
-				<button @click="close()" class="p-0 m-0">
+				<button aria-label="close" @click="close()" class="p-0 m-0">
 					<ul class="prohibited p-0 m-0">
 						<li class="align-items-start p-0 m-0"></li>
 					</ul>
@@ -18,13 +18,17 @@
 
 			<!-- Donate -->
 			<a
+				aria-label="Donate to Ranchofest"
 				href="https://account.venmo.com/u/Ranchofest"
+				target="_blank"
+        rel="noopener noreferrer"
 				class="btn btn-primary btn-large mt-4"
+				@click="donate_close()"
 			>
 				<span class="blink">Donate</span>
 			</a>
 
-			<button class="mt-4 hover:underline" @click="overrideDonation()">I already donated!</button>
+			<button aria-label="Already Donated" class="mt-4 hover:underline" @click="overrideDonation()">I already donated!</button>
 		</div>
 
 
@@ -61,5 +65,11 @@ const close = () => {
 
 	sound.loop = true;
 	sound.play();
+}
+
+const donate_close = () => {
+	state.value = false
+	sound.pause();
+	localStorage.setItem('donationOverride', 'true')
 }
 </script>

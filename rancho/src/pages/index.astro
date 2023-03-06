@@ -11,10 +11,15 @@ import Modal from "../components/Modal.vue";
   <div class="mx-auto">
     <ul class="nav justify-content-left">
       <li class="nav-item pr-1">
-        <a href="/" class="nav-link active">Home</a>
+        <a href="/" aria-label="home" class="nav-link active">Home</a>
       </li>
       <li class="nav-item pr-1">
-        <a href="#" class="nav-link disabled">Lineup (Coming Soon)</a>
+        <a
+          href="#"
+          aria-label="lineup"
+          class="nav-link disabled"
+          style="color: #bbb">Lineup (Coming Soon)</a
+        >
       </li>
     </ul>
     <!---------hero--------->
@@ -60,7 +65,10 @@ import Modal from "../components/Modal.vue";
           know. Anyone not on the invite list will be turned away.
         </p>
         <a
+          aria-label="Donate to Ranchofest"
           href="https://account.venmo.com/u/Ranchofest"
+          target="_blank"
+          rel="noopener noreferrer"
           class="btn btn-primary btn-large mt-3 mb-5"
         >
           <span class="blink">Donate</span>
@@ -142,6 +150,7 @@ import Modal from "../components/Modal.vue";
           <h5>Address:</h5>
           <h4 class="">
             <a
+              aria-label="30200 E Highway 26, Linden, CA 95236"
               href="https://goo.gl/maps/qNaD3xNZfihgLZd3A"
               target="_blank"
               rel="noopener noreferrer"
@@ -159,7 +168,7 @@ import Modal from "../components/Modal.vue";
             <img
               class="col-lg-12 px-0"
               src="images/ranch-arrival-map.jpg"
-              alt=""
+              alt="Arrival Map"
             />
           </div>
           <div class="col-lg-5">
@@ -209,7 +218,7 @@ import Modal from "../components/Modal.vue";
 
         <div class="row justify-content-center text-center my-5">
           <div class="col-lg-10 flex flex-col items-center">
-            <img src="images/wagon.gif" alt="" />
+            <img src="images/wagon.gif" alt="Wagon" />
             <h3>
               For environmental purposes (and fun!), we encourage you to carpool
               with friends coming from the same area.
@@ -288,14 +297,20 @@ import Modal from "../components/Modal.vue";
 
     <footer class="p-4 text-center">
       <a
+        aria-label="cowboy"
         href="https://www.youtube.com/watch?v=MADvxFXWvwE"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img class="col-12 mb-2" src="images/cowboydash.gif" alt="" />
+        <img
+          class="col-12 mb-2"
+          src="images/cowboydash.gif"
+          alt="Cowboy Dash"
+        />
       </a>
       <p class="mb-0">Wrangled with care by</p><p class="mb-0">
         the Rancho <a
+          aria-label="buckaroos"
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
