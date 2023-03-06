@@ -11,7 +11,7 @@
 
 		<!-- Image and Text -->
 		<div class="flex justify-between items-center">
-			<img src="images/dollar.gif" alt="dollar" />
+			<img src="images/dollars.gif" alt="dollar" />
 			<slot />
 		</div>
 
