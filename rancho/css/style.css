@@ -162,3 +162,26 @@ ul {
     visibility: hidden;
   }
 }
+
+.el {
+  width: 350px;
+  height: 100px;
+}
+
+.x {
+  animation: x 7s linear infinite alternate;
+}
+.y {
+  animation: y 5s linear infinite alternate;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX(calc(100vw - 350px));
+  }
+}
+@keyframes y {
+  100% {
+    transform: translateY(calc(100vh - 100px));
+  }
+}
