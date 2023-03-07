@@ -28,7 +28,7 @@
 			>
 				<div class="flex items-center justify-between">
 					<span class="font-bold inline-block hover:text-white">Donate Now!</span>
-					<img src="images/arrow.gif" alt="arrow" class="ml-4" />
+					<img src="images/arrow.gif" alt="arrow" class="ml-4 lg:flex hidden" />
 				</div>
 			</a>
 
