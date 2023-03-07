@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<!-- Modal -->
-		<div v-if="!donationOverride && state" class="min-w-[50px] min-h-[50px] fixed top-1/3 left-1/2 bg-black p-4 flex flex-col items-center" style="transform: translate(-50%, 0); border: 6px ridge #bbb; color: yellow;">
+		<div v-if="!donationOverride && state" class="min-w-[50px] min-h-[50px] fixed top-[15%] left-1/2 bg-black p-4 flex flex-col items-center" style="transform: translate(-50%, 0); border: 6px ridge #bbb; color: yellow;">
 			<!-- Close Button -->
 			<div class="flex justify-end w-full">
 				<button aria-label="close" @click="state = false" class="p-0 m-0">
