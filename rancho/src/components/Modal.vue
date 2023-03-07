@@ -42,14 +42,21 @@
 			<div class="w-full h-screen fixed pointer-events-none">
 				<div class="el-wrap x">
 					<div class="el y w-[250px] lg:w-[350px] h-[100px]">
-						<div class="h-[100px] flex flex-col justify-center items-center text-red-500 lg:text-3xl text-lg font-bold p-4" style="background-color: yellow; border: 6px ridge #bbb;">
+						<a
+							aria-label="Donate to Ranchofest"
+							href="https://account.venmo.com/u/Ranchofest"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="h-[100px] flex flex-col justify-center items-center text-red-500 lg:text-3xl text-lg font-bold p-4 pointer-events-auto no-underline hover:text-red-500 hover:underline"
+							style="background-color: yellow; border: 6px ridge #bbb;"
+						>
 							Donate to Ranchofest!
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
 			<!-- Background Dog -->
-			<div class="dog w-full h-screen fixed pointer-events-none bg-contain bg-no-repeat bg-center opacity-5" />
+			<div class="dog w-full h-screen fixed pointer-events-none bg-contain bg-no-repeat bg-center opacity-10" />
 		</div>
 	</div>
 </template>
