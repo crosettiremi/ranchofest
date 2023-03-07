@@ -29,7 +29,7 @@
 				<span class="blink">Donate</span>
 			</a>
 
-			<button aria-label="Terrible Person" class="mt-4 hover:underline" @click="close()">I'm a bad person and I won't be donating. Take me to the site I deserve.</button>
+			<button aria-label="Terrible Person" class="mt-4 hover:underline" @click="close()">I'm a bad person who won't be donating. Take me to the site I deserve.</button>
 
 			<button aria-label="Already Donated" class="mt-4 hover:underline" @click="overrideDonation()">I already donated!</button>
 		</div>
