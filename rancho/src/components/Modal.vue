@@ -1,9 +1,9 @@
 <template>
 	<div>
 		<!-- Modal -->
-		<div v-if="!donationOverride && state" class="min-w-[50px] min-h-[50px] fixed top-1/3 left-1/2 bg-black p-4 flex flex-col" style="transform: translate(-50%, 0); border: 6px ridge #bbb; color: yellow;">
+		<div v-if="!donationOverride && state" class="min-w-[50px] min-h-[50px] fixed top-1/3 left-1/2 bg-black p-4 flex flex-col items-center" style="transform: translate(-50%, 0); border: 6px ridge #bbb; color: yellow;">
 			<!-- Close Button -->
-			<div class="flex justify-end">
+			<div class="flex justify-end w-full">
 				<button aria-label="close" @click="state = false" class="p-0 m-0">
 					<ul class="prohibited p-0 m-0">
 						<li class="align-items-start p-0 m-0"></li>
@@ -13,7 +13,7 @@
 
 			<!-- Image and Text -->
 			<div class="flex justify-between items-center">
-				<img src="images/dollars.gif" alt="dollar" />
+				<img src="images/dollars.gif" alt="dollar" class="mr-4" />
 				<slot />
 			</div>
 
@@ -23,24 +23,33 @@
 				href="https://account.venmo.com/u/Ranchofest"
 				target="_blank"
         rel="noopener noreferrer"
-				class="btn btn-primary btn-large mt-4"
+				class="btn btn-primary btn-large mt-4 flex"
 				@click="donate_close()"
 			>
-				<span class="blink">Donate</span>
+				<div class="flex items-center justify-between">
+					<span class="font-bold inline-block hover:text-white">Donate Now!</span>
+					<img src="images/arrow.gif" alt="arrow" class="ml-4" />
+				</div>
 			</a>
 
-			<button aria-label="Terrible Person" class="mt-4 hover:underline" @click="close()">I'm a bad person who won't be donating. Take me to the site I deserve.</button>
+			<button aria-label="Terrible Person" class="mt-4 hover:underline text-red-500 font-bold" @click="close()">I'm a bad person who won't be donating. Take me to the site I deserve.</button>
 
-			<button aria-label="Already Donated" class="mt-4 hover:underline" @click="overrideDonation()">I already donated!</button>
+			<a href="#" class="rainbow-button mt-4 hover:text-white" alt="I Already Donated!" area-label="Already Donated" @click="overrideDonation()"></a>
 		</div>
 
-		<!-- Bouncing Donation -->
-		<div v-if="badOverride" class="w-full h-screen fixed pointer-events-none">
-			<div class="el-wrap x">
-				<div class="el y w-[250px] lg:w-[350px] h-[100px]">
-					<div class="h-[100px] flex justify-center items-center text-red-500 lg:text-3xl text-lg font-bold p-4" style="background-color: yellow; border: 6px ridge #bbb;">Donate to Ranchofest!</div>
+		<div v-if="badOverride">
+			<!-- Bouncing Donation -->
+			<div class="w-full h-screen fixed pointer-events-none">
+				<div class="el-wrap x">
+					<div class="el y w-[250px] lg:w-[350px] h-[100px]">
+						<div class="h-[100px] flex flex-col justify-center items-center text-red-500 lg:text-3xl text-lg font-bold p-4" style="background-color: yellow; border: 6px ridge #bbb;">
+							Donate to Ranchofest!
+						</div>
+					</div>
 				</div>
 			</div>
+			<!-- Background Dog -->
+			<div class="dog w-full h-screen fixed pointer-events-none bg-contain bg-no-repeat bg-center opacity-5" />
 		</div>
 	</div>
 </template>
