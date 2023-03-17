@@ -36,6 +36,14 @@ p, li {
 	font-style: normal;
 	font-size:6.8vw;
 }
+
+.title-lineup {
+	font-family: "colt", serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size:10vw;
+}
+
 .tagline {
 	font-family: "filmotype-wand", serif;
 	font-weight: 400;
@@ -159,4 +167,8 @@ ul {
   to {
 	visibility: hidden;
   }
+}
+
+.lineup h2 {
+	font-size:5vw;
 }
